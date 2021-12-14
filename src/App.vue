@@ -1,8 +1,7 @@
 <template>
   <div>
-    <Header @titleSearch="titleToSendApi" 
-    @returnHome="this.getApipopular('movie')"/>
-    <Main :filmsList="movie" :seriesList="tv" />
+    <Header/>
+    <Main/>
   </div>
 </template>
 

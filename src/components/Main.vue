@@ -1,29 +1,25 @@
 <template>
-  <div>
-<h2>scdscds</h2>
-  </div>
+  <main>
+    <Jumbotron />
+  </main>
 </template>
 
 <script>
-
-
+import Jumbotron from './Jumbotron.vue'
 export default {
   name: "Main",
-  // components: {
-  //   CardMovie,
-  //   CardSeries,
-  // },
+  components: {
+    Jumbotron,
+  },
   // props: {
   //   filmsList: Array,
   //   seriesList: Array,
   // },
-  // data() {
-  //   return {
-  //     isVisible: true,
-  //     pxTraslMovie: 0,
-  //     pxTraslTv: 0,
-  //   }
-  // },
+  //  data(){
+  //    return{
+  //      Cards,
+  //    }
+  //  },
   // methods:{
   //   runLeftMovie(){
   //     this.pxTraslMovie = this.pxTraslMovie - 450;
@@ -47,5 +43,8 @@ export default {
 </script>
 
 <style lang="scss">
+main {
+  background-color: black;
+  height: 100vh;
+}
 </style>
-

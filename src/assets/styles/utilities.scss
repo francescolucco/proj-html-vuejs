@@ -1,6 +1,44 @@
 // UTILITIES
 
-h1{
-   color: white;
+ul{
+   list-style: none;
+   padding: 0px;
+   margin: 0px;
+   height: 100%;
+}
+li{
+   padding: 25px;
    text-transform: uppercase;
+   height: 100%;
+}
+a{
+   text-decoration: none;
+   color: $primary-color;
+   height: 100%;
+   &:hover{
+      color: $second-color;
+      text-decoration: none;
+   }
+}
+button{
+   margin: 0;
+   padding: 12px 35px;
+   border: none;
+   text-transform: uppercase;
+}
+button.yellow{
+   background-color: $second-color;
+   color: $primary-color;
+}
+button.yellow:hover{
+   background-color: $buttoncolor;
+   color: white;
+}
+button.grey{
+   background-color: $buttoncolor;
+   color: white;
+}
+button.grey:hover{
+   background-color: $second-color;
+   color: $primary-color;
 }
