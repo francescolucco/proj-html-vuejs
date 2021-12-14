@@ -12,7 +12,7 @@
   </div>
   <section class="d-flex justify-content-center align-items-center">
      <p>Do You Have A Construction Project We Can Help With?</p>
-     <button class="grey">GET A FREE QUOTE</button>
+     <button class="grey small">GET A FREE QUOTE</button>
   </section>
 </div>
 </template>
@@ -59,12 +59,17 @@ section{
    p{
       font-size: 30px;
    }
-   button{
+   button.grey.small{
       position: absolute;
       top: 100%;
       left: 50%;
       transform: translate(-50%, -50%);
       border: 1px solid white;
+      &:hover{
+        border: 1px solid $buttoncolor;
+        color: $buttoncolor;
+        background-color: white;
+      }
    }
 }
 </style>

@@ -42,3 +42,14 @@ button.grey:hover{
    background-color: $second-color;
    color: $primary-color;
 }
+.title{
+   color: $titlecolor;
+   font-size: 32px;
+}
+.subtitle{
+   color: lighten($primary-color, 15%);
+   font-size: 18px;
+}
+p{
+   line-height: 35px;
+}

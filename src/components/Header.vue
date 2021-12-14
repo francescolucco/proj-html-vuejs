@@ -19,14 +19,12 @@
         </li>
       </ul>
       <button class="yellow">GET QUOTE</button>
-      <!-- <Button titleButton="GET QUOTE"/> -->
     </div>
   </header>
 </template>
 
 <script>
 import VoiceMenu from "../assets/data/voice-menu";
-// import Button from "./Button";
 
 export default {
   name: "Header",
@@ -35,9 +33,7 @@ export default {
       VoiceMenu,
     };
   },
-  components: {
-    // Button,
-  },
+
   methods: {
     getActive(index) {
       this.VoiceMenu.forEach((item) => {

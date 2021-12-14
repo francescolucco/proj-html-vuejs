@@ -1,25 +1,38 @@
 <template>
   <main>
     <Jumbotron />
+    <TitleSection :voiceTitle="this.VoiceTitle[0]"/>
+    <OptionConstruction/>
+    <JumboConstruction/>
+    <TitleSection :voiceTitle="this.VoiceTitle[1]"/>
+
   </main>
 </template>
 
 <script>
 import Jumbotron from './Jumbotron.vue'
+import JumboConstruction from "./JumboConstruction"
+import OptionConstruction from './OptionConstruction.vue'
+import TitleSection from './TitleSection.vue'
+import VoiceTitle from "../assets/data/title-section.js";
+
 export default {
   name: "Main",
   components: {
     Jumbotron,
+    TitleSection,
+    OptionConstruction,
+    JumboConstruction,
   },
   // props: {
   //   filmsList: Array,
   //   seriesList: Array,
   // },
-  //  data(){
-  //    return{
-  //      Cards,
-  //    }
-  //  },
+   data(){
+     return{
+       VoiceTitle,
+     }
+   },
   // methods:{
   //   runLeftMovie(){
   //     this.pxTraslMovie = this.pxTraslMovie - 450;
@@ -44,7 +57,6 @@ export default {
 
 <style lang="scss">
 main {
-  background-color: black;
   height: 100vh;
 }
 </style>
