@@ -2,7 +2,7 @@
   <div class="row">
     <div v-for="(card, index) in Cards" :key="index" class="col"
      @mouseover="mouseOver(index)"
-     @mouseout="mouseOver(index)">
+     @mouseout="mouseOut(index)">
       <div
         class="card-construction front-card d-flex flex-column justify-content-center align-items-center"
         v-if="card.active"
@@ -37,7 +37,10 @@ export default {
   },
   methods: {
     mouseOver(index) {
-      this.Cards[index].active = !this.Cards[index].active;
+      this.Cards[index].active = false
+    },
+    mouseOut(index) {
+      this.Cards[index].active = true
     },
   },
 };
