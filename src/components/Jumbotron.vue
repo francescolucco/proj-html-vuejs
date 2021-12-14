@@ -54,7 +54,7 @@ export default {
 section{
    height: 160px;
    background-color: $second-color;
-   color: $primary-color;
+   color: $titlecolor;
    position: relative;
    p{
       font-size: 30px;
