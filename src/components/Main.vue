@@ -15,6 +15,7 @@
     </div>
       <TitleSection :voiceTitle="this.VoiceTitle[5]" />
       <Partners />
+      <JumboSpaces />
   </main>
 </template>
 
@@ -28,6 +29,7 @@ import LatestNews from "./LatestNews";
 import Partners from "./Partners";
 import OptionConstruction from "./OptionConstruction.vue";
 import TitleSection from "./TitleSection.vue";
+import JumboSpaces from "./JumboSpaces.vue";
 import VoiceTitle from "../assets/data/title-section.js";
 
 export default {
@@ -42,6 +44,7 @@ export default {
     JumboOwnersSay,
     LatestNews,
     Partners,
+    JumboSpaces,
   },
   // props: {
   //   filmsList: Array,

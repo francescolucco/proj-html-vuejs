@@ -24,7 +24,7 @@ export default {
 @import "../assets/styles/vars.scss";
 
 .row{
-   padding: 0;
+   padding: 0 0 145px 0;
 }
 .logo-partners{
    height: 100px;
