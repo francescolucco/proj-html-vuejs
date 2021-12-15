@@ -13,6 +13,8 @@
       <TitleSection :voiceTitle="this.VoiceTitle[4]" />
       <LatestNews />
     </div>
+      <TitleSection :voiceTitle="this.VoiceTitle[5]" />
+      <Partners />
   </main>
 </template>
 
@@ -23,6 +25,7 @@ import JumboOwnersSay from "./JumboOwnersSay.vue";
 import JumboConstruction from "./JumboConstruction";
 import ResentWork from "./ResentWork";
 import LatestNews from "./LatestNews";
+import Partners from "./Partners";
 import OptionConstruction from "./OptionConstruction.vue";
 import TitleSection from "./TitleSection.vue";
 import VoiceTitle from "../assets/data/title-section.js";
@@ -38,6 +41,7 @@ export default {
     OurCoreValues,
     JumboOwnersSay,
     LatestNews,
+    Partners,
   },
   // props: {
   //   filmsList: Array,
