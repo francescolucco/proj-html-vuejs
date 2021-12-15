@@ -4,7 +4,7 @@
       <div
         v-for="(card, index) in Cards"
         :key="index"
-        class="box-recent-work"
+        class="box-latst-news"
         @mouseover="mouseOver(index)"
         @mouseout="mouseOut(index)"
       >
@@ -78,7 +78,7 @@ export default {
 @import "../assets/styles/vars.scss";
 @import "../assets/styles/utilities.scss";
 
-.box-recent-work {
+.box-latst-news {
   height: auto;
   width: 400px;
   background-color: $second-color;
@@ -89,8 +89,9 @@ export default {
     height: 100%;
     background-color: white;
     .box-cont {
+      width: 100%;
+      height: 60,25%;
       background-color: $second-color;
-      height: 200.02px;
     }
     img {
       width: 100%;

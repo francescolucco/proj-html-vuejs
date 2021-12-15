@@ -16,7 +16,7 @@ export default [
       image: "blog-post-92486644-1200x723.jpg"
    },
    {
-      title: "Future proofing a modern home",
+      title: "Future proofing a modern home in Florida",
       date: "October 11th, 2020",
       text: "Technology is Here to Stay Lorem ipsum dolor sit amet consectetur adipisicing elit.  In magnam rerum sit ex, vero debitis! In magnam rerum sit! In magnam rerum sit ex, vero debitis. In magnam rerum sit ex, vero debitis! In magnam rerum sit! In magnam rerum sit ex, vero debitis.",
       place: "Architecture, Buildings, Construction, News",
