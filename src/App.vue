@@ -1,13 +1,15 @@
 <template>
-  <div>
+  <div class="app">
     <Header/>
     <Main/>
+    <Footer/>
   </div>
 </template>
 
 <script>
 import Header from "./components/Header";
 import Main from "./components/Main";
+import Footer from "./components/Footer";
 
 export default {
   name: "App",
@@ -19,6 +21,7 @@ export default {
   components: {
     Header,
     Main,
+    Footer,
   },
   methods: {
 
@@ -35,5 +38,12 @@ export default {
 @import './assets/styles/mixin.scss';
 @import './assets/styles/generals.scss';
 @import './assets/styles/utilities.scss';
+
+.app{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 </style>
 

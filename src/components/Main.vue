@@ -46,40 +46,16 @@ export default {
     Partners,
     JumboSpaces,
   },
-  // props: {
-  //   filmsList: Array,
-  //   seriesList: Array,
-  // },
   data() {
     return {
       VoiceTitle,
     };
   },
-  // methods:{
-  //   runLeftMovie(){
-  //     this.pxTraslMovie = this.pxTraslMovie - 450;
-  //     console.log('Movie',this.pxTraslMovie);
-  //   },
-  //   runRightMovie(){
-  //     this.pxTraslMovie = this.pxTraslMovie + 450;
-  //     console.log('Movie', this.pxTraslMovie);
-  //   },
-  //   runLeftTv(){
-  //     this.pxTraslTv = this.pxTraslTv - 450;
-  //     console.log('Tv',this.pxTraslTv);
-  //   },
-  //   runRightTv(){
-  //     this.pxTraslTv = this.pxTraslTv + 450;
-  //     console.log('Tv', this.pxTraslTv);
-  //   },
-
-  // },
 };
 </script>
 
 <style lang="scss">
 main {
-  height: 100vh;
   .back-grey {
     background-color: #f5f5f5;
   }
