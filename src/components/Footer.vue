@@ -38,15 +38,40 @@
           </div>
         </div>
       </div>
-      <div class="col-3 three"></div>
-      <div class="col-3 four"></div>
+      <div class="col-3 three">
+        <div class="title-footer">contact us today</div>
+        <ul class="ul-footer">
+          <li
+            v-for="(info, index) in Informations"
+            :key="index"
+            class="li-footer d-flex"
+          >
+            <div class="box-icon">
+              <i class="fa-solid" :class="info.classe"></i>
+            </div>
+            <div class="box-text">
+              <p>{{ info.text }}</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="col-3 four">
+        <div class="title-footer">contact us today</div>
+        <img src="../assets/img/construction_map_pin.png" alt="" />
+      </div>
     </div>
   </footer>
 </template>
 
 <script>
+import Informations from "../assets/data/ul-footer";
 export default {
   name: "Footer",
+  data() {
+    return {
+      Informations,
+    };
+  },
 };
 </script>
 
@@ -67,11 +92,12 @@ footer {
     height: 100%;
   }
   .one {
+    padding: 0 30px 0 0;
     img {
       padding-bottom: 45px;
     }
     p {
-      padding-bottom: 20px;
+      padding-bottom: 17px;
     }
   }
   .two {
@@ -92,12 +118,12 @@ footer {
       }
       .col-10 {
         padding: 0;
-        margin: 0;
+        padding: 0 30px 0 0;
         .tweet {
           position: absolute;
           width: 22px;
           top: 0;
-          right: 0;
+          right: 30px;
           cursor: pointer;
         }
         .strong {
@@ -128,8 +154,50 @@ footer {
     }
   }
   .three {
+    .title-footer {
+      color: $second-color;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding-bottom: 40px;
+      position: relative;
+    }
+    .ul-footer {
+      padding: 0;
+      margin: 0;
+      .li-footer {
+        padding: 3px 0;
+        margin: 0;
+        text-transform: none;
+        .box-icon {
+          height: 100%;
+          width: 8%;
+          i {
+            font-size: 22px;
+            padding-top: 7px;
+          }
+        }
+        .box-text {
+          width: 75%;
+          p {
+            font-size: 17px;
+          }
+        }
+      }
+    }
   }
-  .four {
+}
+.four {
+  .title-footer {
+    color: $second-color;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 40px;
+    position: relative;
+  }
+  img{
+     width: 100%;
   }
 }
 </style>
