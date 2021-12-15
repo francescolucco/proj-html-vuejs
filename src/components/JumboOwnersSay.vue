@@ -126,10 +126,12 @@ export default {
         width: 10px;
         border-radius: 50%;
         background-color: white;
+        cursor: pointer;
       }
       .point.empty {
         background-color: transparent;
         border: 1px solid white;
+        cursor: pointer;
       }
     }
   }

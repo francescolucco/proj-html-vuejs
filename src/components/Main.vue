@@ -8,8 +8,10 @@
     <ResentWork />
     <div class="back-grey">
       <TitleSection :voiceTitle="this.VoiceTitle[2]" />
-    <OurCoreValues />
-    <JumboOwnersSay />
+      <OurCoreValues />
+      <JumboOwnersSay />
+      <TitleSection :voiceTitle="this.VoiceTitle[4]" />
+      <LatestNews />
     </div>
   </main>
 </template>
@@ -20,6 +22,7 @@ import OurCoreValues from "./OurCoreValues.vue";
 import JumboOwnersSay from "./JumboOwnersSay.vue";
 import JumboConstruction from "./JumboConstruction";
 import ResentWork from "./ResentWork";
+import LatestNews from "./LatestNews";
 import OptionConstruction from "./OptionConstruction.vue";
 import TitleSection from "./TitleSection.vue";
 import VoiceTitle from "../assets/data/title-section.js";
@@ -34,6 +37,7 @@ export default {
     ResentWork,
     OurCoreValues,
     JumboOwnersSay,
+    LatestNews,
   },
   // props: {
   //   filmsList: Array,
@@ -69,7 +73,7 @@ export default {
 <style lang="scss">
 main {
   height: 100vh;
-  .back-grey{
+  .back-grey {
     background-color: #f5f5f5;
   }
 }

@@ -20,7 +20,9 @@
       >
         <div class="title">{{ card.title }}</div>
         <p class="subtitle">{{ card.text }}</p>
-        <button class="yellow custom">GET A QUOTE</button>
+        <button
+        @mouseover="mouseOut(index)"
+        class="yellow custom">GET A QUOTE</button>
       </div>
     </div>
   </div>
